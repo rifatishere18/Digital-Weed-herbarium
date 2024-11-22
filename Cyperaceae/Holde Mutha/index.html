@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holde Mutha</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f9f9f9;
+      color: #000000;
+      text-align: center;
+      padding: 10px 1px;
+    }
+
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px 40px;
+    }
+
+    .section-title {
+      color: #362bb0;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 21px;
+      color: #2b6cb0;
+    }
+
+    .sc{
+      font-style: italic;
+    }
+
+    .gallery {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      color: #0d53cb;
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-decoration: underline;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #228B22;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      background-color: #196619;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Holde Mutha</h1>
+  </header>
+
+  <section>
+    <p><span class="highlight">Local name:</span> হলদে মুথা</p>
+    <p><span class="highlight">English name:</span> Yellow nutsedge, Tiger nut, Chufa, Earth almond</p>
+    <p><span class="highlight">Scientific name:</span> <span class="sc"> Cyperus esculentus</span></p>
+    <p><span class="highlight">Family:</span> Cyperaceae</p>
+
+    <h2 class="section-title">Habit</h2>
+    <p> It is a perennial sedge weed.</p>
+
+    <h2 class="section-title">Habitat</h2>
+    <p>Comparatively low land and wet soil.</p>
+
+    <h2 class="section-title">Growing season</h2>
+    <p>Rabi and kharif.</p>
+
+    <h2 class="section-title">Associated crops</h2>
+    <p>Aus rice, jute and rabi crops.</p>
+
+    <h2 class="section-title">Propagating organ</h2>
+    <p>Seed, rhizome and tuber.</p>
+
+    <h2 class="section-title">Leaf</h2>
+    <p> Erect, paralleled venation, about equal to the stem in long, sessile.</p>
+
+    <h2 class="section-title">Stem</h2>
+    <p>Its stem is called pseudostem. Stem triangular, erect, and branchless. Modified to rhizome.</p>
+
+    <h2 class="section-title">Inflorescence</h2>
+    <p>Yellow-brown and umbel shape.</p>
+
+    <h2 class="section-title">Root</h2>
+    <p> Fibrous, modified rhizome and tuber inter connected with each other.</p>
+
+    <h2 class="section-title">Control measures</h2>
+    <p>It can be controlled by racking, hand pulling and deep ploughing and puddling. Besides, selective herbicide can be used.</p>
+  </section>
+  
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="cypes_01.jpg" alt="Holde Mutha Grass Image 1">
+        <img src="cypes_02.jpg" alt="Holde Mutha Grass Image 2">
+        <img src="cypes_03.jpg" alt="Holde Mutha Grass Image 3">
+        <img src="cypes_04.jpg" alt="Holde Mutha Grass Image 4">
+        <img src="cypes_05.jpg" alt="Holde Mutha Grass Image 5">
+        <img src="cypes_06.jpg" alt="Holde Mutha Grass Image 6">
+        <img src="cypes_07.jpg" alt="Holde Mutha Grass Image 7">
+        <img src="cypes_08.jpg" alt="Holde Mutha Grass Image 8">
+        <img src="cypes_09.jpg" alt="Holde Mutha Grass Image 9">
+      </div>
+    </section>
+  </body>
+  <script>
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        window.open(img.src, '_blank');
+      });
+    });
+  </script>
+
+<button id="back-to-top">↑</button>
+
+<script>
+  // Smooth scrolling for Back to Top button
+  document.getElementById('back-to-top').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+
+</html>
