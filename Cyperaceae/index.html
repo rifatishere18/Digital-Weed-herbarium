@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyperaceae Family</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #eef2f3;
+      margin: 0;
+      padding: 10px;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2d3e50;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .plant-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Card Styles */
+    .plant-card {
+      background: linear-gradient(145deg, #ffffff, #d9e0e7);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .plant-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .plant-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .plant-name {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2d3e50;
+    }
+
+    span {
+      font-size: 0.95rem;
+    }
+
+    .plant-link a {
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .plant-link a:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .plant-card {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* Laptop View: Display Details in Column Layout */
+    @media (min-width: 769px) {
+      .plant-details {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Cyperaceae Family</h2>
+
+  <div class="plant-list">
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Mutha</span>
+        <span>English Name: Nutsedge</span>
+        <span>Scientific Name: Cyperus rotundus</span>
+        <span class="plant-link"><a href="Mutha/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Holde mutha</span>
+        <span>English Name: Yellow nutsedge</span>
+        <span>Scientific Name: Cyperus esculentus</span>
+        <span class="plant-link"><a href="Holde Mutha/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Boro Chucha</span>
+        <span>English Name: Umbrella sedge</span>
+        <span>Scientific Name: Cyperus irria</span>
+        <span class="plant-link"><a href="Boro Chucha/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Joyna</span>
+        <span>English Name: Joyna</span>
+        <span>Scientific Name: Fimbristylis miliacea</span>
+        <span class="plant-link"><a href="Joyna/">View</a></span>
+      </div>
+    </div>
+    <!-- Add more plant-card divs as needed -->
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Matichech</span>
+        <span>English Name: Mud sedge</span>
+        <span>Scientific Name: 	Fimbristylis diphylla</span>
+        <span class="plant-link"><a href="Matichech/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Chechra</span>
+        <span>English Name: Bog bulrush</span>
+        <span>Scientific Name: Scirpus mucronatus</span>
+        <span class="plant-link"><a href="Chechra/">View</a></span>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
