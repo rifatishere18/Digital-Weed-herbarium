@@ -5,128 +5,186 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poaceae Family</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: #eef2f3;
+      margin: 0;
+      padding: 10px;
+      color: #333;
     }
 
     h2 {
       text-align: center;
-      color: #333;
-      margin-bottom: 20px;
+      color: #2d3e50;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    table {
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .plant-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    th {
-      background-color: #4CAF50 !important;
-      color: white !important;
+    /* Card Styles */
+    .plant-card {
+      background: linear-gradient(145deg, #ffffff, #d9e0e7);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    tr:hover {
-      background-color: #f1f1f1 !important;
+    .plant-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .plant-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .plant-name {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2d3e50;
+    }
+
+    span {
+      font-size: 0.95rem;
+    }
+
+    .plant-link a {
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .plant-link a:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .plant-card {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* Laptop View: Display Details in Column Layout */
+    @media (min-width: 769px) {
+      .plant-details {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h2>Poaceae Family</h2>
+  <h2>Poaceae Family</h2>
 
-    <div class="table-responsive">
-      <table class="table table-bordered table-hover">
-        <thead class="text-center">
-          <tr>
-            <th>Bangla Name</th>
-            <th>English Name</th>
-            <th>Scientific Name</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Durba</td>
-            <td>Bermuda grass</td>
-            <td>Cynodon dactylon</td>
-            <td><a href="Durba/" class="text-success">View</a></td>
-          </tr>
-          <tr>
-            <td>Boro Shama</td>
-            <td>Barnyard grass</td>
-            <td>Echinochloa cruss-galli</td>
-            <td><a href="Boro Shama/" class="text-success">View</a></td>
-          </tr>
-          <tr>
-            <td>Choto Shama</td>
-            <td>Jungle Rice</td>
-            <td>Echinochloa colonum</td>
-            <td><a href="Choto Shama/" class="text-success">View</a></td>
-          </tr>
-          <tr>
-            <td>Chapra</td>
-            <td>Goose grass</td>
-            <td>Eleusine indica</td>
-            <td><a href="Chapra/" class="text-success">View</a></td>
-          </tr>
-            <tr>
-                <td>Anguli ghash</td>
-                <td>Scrab grass</td>
-                <td>Digitaria sanguinalis</td>
-                <td><a href="Anguli Ghash/" class="text-success">View</a></td>
-            </tr>
-            <tr>
-              <td>Kakpaya</td>
-              <td>Crow foot grass</td>
-              <td>Dactyloctenium aegyptium</td>
-              <td><a href="Kak Paya/" class="text-success">View</a></td>
-          </tr>
-            <tr>
-                <td>Khuda anguli</td>
-                <td>Smooth scrab</td>
-                <td>Digitaria ischaemum</td>
-                <td><a href="404.html" class="text-success">View</a></td>
-            </tr>
-            <tr>
-                <td>Arail</td>
-                <td>Swamp rice</td>
-                <td>Leersia hexandra</td>
-                <td><a href="404.html" class="text-success">View</a></td>
-            </tr>
-            <tr>
-                <td>Ullu</td>
-                <td>Cogon grass</td>
-                <td>Imperata cylindrica</td>
-                <td><a href="404.html" class="text-success">View</a></td>
-            </tr>
-            <tr>
-                <td>Prem kanta</td>
-                <td>Love thron</td>
-                <td>Chrysopogon aciculatus</td>
-                <td><a href="404.html" class="text-success">View</a></td>
-            </tr>
-            <tr>
-                <td>Jara dhan</td>
-                <td>Wild rice</td>
-                <td>Oryza rufipogon</td>
-                <td><a href="404.html" class="text-success">View</a></td>
-            </tr>
-
-
-
-        </tbody>
-      </table>
+  <div class="plant-list">
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Durba</span>
+        <span>English Name: Bermuda grass</span>
+        <span>Scientific Name: Cynodon dactylon</span>
+        <span class="plant-link"><a href="Durba/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Boro Shama</span>
+        <span>English Name: Barnyard grass</span>
+        <span>Scientific Name: Echinochloa cruss-galli</span>
+        <span class="plant-link"><a href="Boro Shama/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Choto Shama</span>
+        <span>English Name: Jungle Rice</span>
+        <span>Scientific Name: Echinochloa colonum</span>
+        <span class="plant-link"><a href="Choto Shama/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Chapra</span>
+        <span>English Name: Goose grass</span>
+        <span>Scientific Name: Eleusine indica</span>
+        <span class="plant-link"><a href="Chapra/">View</a></span>
+      </div>
+    </div>
+    <!-- Add more plant-card divs as needed -->
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Anguli ghash</span>
+        <span>English Name: Scrab grass</span>
+        <span>Scientific Name: 	Digitaria sanguinalis</span>
+        <span class="plant-link"><a href="Anguli ghash/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Kakpaya</span>
+        <span>English Name: Crow foot grass</span>
+        <span>Scientific Name: Dactyloctenium aegyptium</span>
+        <span class="plant-link"><a href="Kakpaya/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Prem kanta</span>
+        <span>English Name: Love thron</span>
+        <span>Scientific Name: Chrysopogon aciculatus</span>
+        <span class="plant-link"><a href="Premkanta/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Ullu</span> <br>	
+        <span>English Name: Cogon grass</span>
+        <span>Scientific Name: Imperata cylindrica</span>
+        <span class="plant-link"><a href="Ullu/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Arail</span> <br>
+        <span>English Name: Swamp rice</span>
+        <span>Scientific Name: Leersia hexandra</span>
+        <span class="plant-link"><a href="Arail/">View</a></span>
+      </div>
+    </div>
+    <div class="plant-card">
+      <div class="plant-details">
+        <span class="plant-name">Bangla Name: Jara dhan</span>
+        <span>English Name: Wild rice</span>
+        <span>Scientific Name: Oryza rufipogon</span>
+        <span class="plant-link"><a href="Jaradhan/">View</a></span>
+      </div>
     </div>
   </div>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
