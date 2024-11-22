@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matichech</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f9f9f9;
+      color: #000000;
+      text-align: center;
+      padding: 10px 1px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px 40px;
+    }
+
+    .section-title {
+      color: #362bb0;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 21px;
+      color: #2b6cb0;
+    }
+
+    .sc{
+      font-style: italic;
+    }
+
+    .gallery {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      color: #0d53cb;
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-decoration: underline;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #228B22;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      background-color: #196619;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Matichech</h1>
+  </header>
+
+  <section>
+    <p><span class="highlight">Local name:</span> মাটিসেজ</p>
+    <p><span class="highlight">English name:</span> Mud sedge, Tall Fimbry, Eight day grass</p>
+    <p><span class="highlight">Scientific name:</span> <span class="sc"> Fimbristylis diphylla</span></p>
+    <p><span class="highlight">Family:</span> Cyperaceae</p>
+
+    <h2 class="section-title">Habit</h2>
+    <p>Small annual or perennial herbaceous sedge, growing up to 50 cm in height.</p>
+
+    <h2 class="section-title">Habitat</h2>
+    <p>Found in moist, open areas, including fields, roadsides, and wastelands. Prefers sandy or clayey soils.</p>
+
+    <h2 class="section-title">Growing season</h2>
+    <p>Thrives in warm and humid climates, predominantly during the rainy season.</p>
+
+    <h2 class="section-title">Associated crops</h2>
+    <p>Commonly grows in rice fields and other wetland crops, often as a weed.</p>
+
+    <h2 class="section-title">Propagating organ</h2>
+    <p>Propagates through seeds and sometimes vegetatively through rhizomes.</p>
+
+    <h2 class="section-title">Leaf</h2>
+    <p>Narrow, linear leaves with a pointed tip, arranged at the base of the plant.</p>
+
+    <h2 class="section-title">Stem</h2>
+    <p>Slender, erect, and unbranched, triangular in cross-section.</p>
+
+    <h2 class="section-title">Inflorescence</h2>
+    <p>Umbel-like clusters of small, brownish spikelets borne on a long stalk.</p>
+
+    <h2 class="section-title">Root</h2>
+    <p>Fibrous root system, aiding in its adaptability to moist conditions.</p>
+
+    <h2 class="section-title">Control measures</h2>
+    <p>Maintain proper water levels in rice fields to suppress growth. Hand weeding and hoeing to remove plants before seed set. Use selective herbicides like cyhalofop-butyl or pre-emergence herbicides such as butachlor, following recommended dosages. Combine mechanical and chemical methods for effective control.</p>
+  </section>
+  
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="m1.jpg" alt="Matichech Image 1">
+        <img src="m2.jpg" alt="Matichech Image 2">
+        <img src="m3.jpg" alt="Matichech Image 3">
+        <img src="m4.jpg" alt="Matichech Image 4">
+        <img src="m5.jpeg" alt="Matichech Image 5">
+        <img src="m6.jpg" alt="Matichech Image 6">
+        <img src="m7.jpg" alt="Matichech Image 7">
+      </div>
+    </section>
+  </body>
+  <script>
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        window.open(img.src, '_blank');
+      });
+    });
+  </script>
+
+<button id="back-to-top">↑</button>
+
+<script>
+  // Smooth scrolling for Back to Top button
+  document.getElementById('back-to-top').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+
+</html>
