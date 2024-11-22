@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boro Chucha</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f9f9f9;
+      color: #000000;
+      text-align: center;
+      padding: 10px 1px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px 40px;
+    }
+
+    .section-title {
+      color: #362bb0;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 21px;
+      color: #2b6cb0;
+    }
+
+    .sc{
+      font-style: italic;
+    }
+
+    .gallery {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      color: #0d53cb;
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-decoration: underline;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #228B22;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      background-color: #196619;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Boro Chucha</h1>
+  </header>
+
+  <section>
+    <p><span class="highlight">Local name:</span> বড় চুঁচা</p>
+    <p><span class="highlight">English name:</span> Rice flat sedge</p>
+    <p><span class="highlight">Scientific name:</span> <span class="sc"> Cyperus iria</span></p>
+    <p><span class="highlight">Family:</span> Cyperaceae</p>
+
+    <h2 class="section-title">Habit</h2>
+    <p>Annual sedge with a tufted growth form, growing up to 60 cm tall.</p>
+
+    <h2 class="section-title">Habitat</h2>
+    <p>Found in wet, marshy areas such as rice fields, irrigation canals, and waterlogged soils.</p>
+
+    <h2 class="section-title">Growing season</h2>
+    <p>Thrives during the rainy season, particularly in tropical and subtropical climates.</p>
+
+    <h2 class="section-title">Associated crops</h2>
+    <p>Commonly associated with rice, but also grows in fields of maize, sugarcane, and vegetables.</p>
+
+    <h2 class="section-title">Propagating organ</h2>
+    <p>Propagates primarily through seeds.</p>
+
+    <h2 class="section-title">Leaf</h2>
+    <p>Narrow, linear leaves that are bright green and arranged alternately.</p>
+
+    <h2 class="section-title">Stem</h2>
+    <p>Erect, triangular in cross-section, and smooth.</p>
+
+    <h2 class="section-title">Inflorescence</h2>
+    <p>Umbel-like clusters with multiple spikelets, yellowish-green to brown in color.</p>
+
+    <h2 class="section-title">Root</h2>
+    <p>Fibrous root system anchoring in wet soils.</p>
+
+    <h2 class="section-title">Control measures</h2>
+    <p>Proper water management and maintaining optimum crop spacing to reduce weed growth. Manual removal or tillage before seed maturation. Application of pre-emergence or post-emergence herbicides like butachlor or bensulfuron-methyl, specifically for rice fields.</p>
+  </section>
+  
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="cypir_01.jpg" alt="Boro Chucha Image 1">
+        <img src="cypir_02.jpg" alt="Boro Chucha Image 2">
+        <img src="cypir_03.jpg" alt="Boro Chucha Image 3">
+        <img src="cypir_04.jpg" alt="Boro Chucha Image 4">
+        <img src="cypir_05.jpg" alt="Boro Chucha Image 5">
+        <img src="cypir_06.jpg" alt="Boro Chucha Image 6">
+        <img src="cypir_07.jpg" alt="Boro Chucha Image 7">
+        <img src="cypir_75.jpg" alt="Boro Chucha Image 8">
+      </div>
+    </section>
+  </body>
+  <script>
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        window.open(img.src, '_blank');
+      });
+    });
+  </script>
+
+<button id="back-to-top">↑</button>
+
+<script>
+  // Smooth scrolling for Back to Top button
+  document.getElementById('back-to-top').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+
+</html>
