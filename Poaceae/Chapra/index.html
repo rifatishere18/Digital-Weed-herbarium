@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapra</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f9f9f9;
+      color: #000000;
+      text-align: center;
+      padding: 10px 1px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px 40px;
+    }
+
+    .section-title {
+      color: #362bb0;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 21px;
+      color: #2b6cb0;
+    }
+
+    .sc{
+      font-style: italic;
+    }
+
+    .gallery {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      color: #0d53cb;
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-decoration: underline;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #228B22;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      background-color: #196619;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Chapra</h1>
+  </header>
+
+  <section>
+    <p><span class="highlight">Local name:</span> বিন্যাচালা, চাপড়া, গৈচা, মেলাঙ্গাকুড়ি, মেলানকুড়ি</p>
+    <p><span class="highlight">English name:</span> Indian goosegrass, Yard-grass, Goose grass</p>
+    <p><span class="highlight">Scientific name:</span> <span class="sc">Eleusine indica</span></p>
+    <p><span class="highlight">Family:</span> Poaceae</p>
+
+    <h2 class="section-title">Habit</h2>
+    <p>Annual grass, herb. Profuse tillering habit.</p>
+
+    <h2 class="section-title">Habitat</h2>
+    <p> Dry to moist soils.</p>
+
+    <h2 class="section-title">Growing season</h2>
+    <p> Kharif and Rabi but they are found all over the year. Short life cycle; can complete several cycles in a year. </p>
+
+    <h2 class="section-title">Associated crops</h2>
+    <p>Aus rice, jute, sugarcane, maize and winter vegetables.</p>
+
+    <h2 class="section-title">Propagating organ</h2>
+    <p> Propagates by seeds; prolific seed producer. Seeds can germinate throughout the year if moisture supply is adequate.</p>
+
+    <h2 class="section-title">Leaf</h2>
+    <p>  Narrow, linear and pointed tip.</p>
+
+    <h2 class="section-title">Stem</h2>
+    <p> Erect, much dense.</p>
+
+    <h2 class="section-title">Inflorescence</h2>
+    <p>Spike like.</p>
+
+    <h2 class="section-title">Root</h2>
+    <p>Fibrous, extensive root system.</p>
+
+    <h2 class="section-title">Control measures</h2>
+    <p> Can be controlled by hand pulling, ploughing and by using selective herbicide.</p>
+  </section>
+  
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="chapra1.jpg" alt="Choto Shama Grass Image 1">
+        <img src="chapra3.jpg" alt="Choto Shama Grass Image 2">
+        <img src="chapra5.jpg" alt="Choto Shama Grass Image 3">
+        <img src="chapra6.jpg" alt="Choto Shama Grass Image 4">
+        <img src="chapra8.jpg" alt="Choto Shama Grass Image 5">
+        <img src="chapra9.jpg" alt="Choto Shama Grass Image 6">
+        <img src="chapra10.jpg" alt="Choto Shama Grass Image 7">
+        <img src="chapra12.jpg" alt="Choto Shama Grass Image 8">
+        <img src="chapra13.jpg" alt="Choto Shama Grass Image 9">
+        <img src="chapra14.jpg" alt="Choto Shama Grass Image 10">
+        <img src="chapra15.jpg" alt="Choto Shama Grass Image 11">
+        <img src="chapra16.jpg" alt="Choto Shama Grass Image 12">
+      </div>
+    </section>
+  </body>
+  <script>
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        window.open(img.src, '_blank');
+      });
+    });
+  </script>
+
+<button id="back-to-top">↑</button>
+
+<script>
+  // Smooth scrolling for Back to Top button
+  document.getElementById('back-to-top').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+
+</html>
